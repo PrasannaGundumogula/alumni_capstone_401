@@ -1,0 +1,115 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Donation</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            background-image: url('/public/images/donate.jpg');
+            background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 98%;
+   
+  
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Form Styles */
+        form {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input:focus {
+            outline: none;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #2ecc71;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px auto;
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                margin: 10px auto;
+                padding: 15px;
+            }
+            input {
+                padding: 8px;
+            }
+            button {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Make a Donation</h2>
+        <form action="/api/donate" method="POST">
+            <label for="name">Enter your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="amount">Enter the Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+            <button type="submit">Donate</button>
+        </form>
+    </div>
+</body>
+</html>
+

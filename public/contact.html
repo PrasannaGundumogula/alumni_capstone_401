@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            background-image: url('/public/images/contactus.png');
+            background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1; /* Place text over image */
+
+        }
+          img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Occupies full screen height */
+    object-fit: cover; /* Maintains aspect ratio */
+    z-index: 0; /* Place image behind text */
+}
+
+        /* Heading Styles */
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #666;
+        }
+
+        /* Paragraph Styles */
+        p {
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact us for any queries</h1>
+        <h2>contact email : <a href="mailto:abc@gmail.com">abc@gmail.com</a></h2>
+        <p>Send the job referrals, achievements, events to the above email</p>
+        <img src="/public/images/contactus.png">
+    </div>
+</body> 
+</html>
+
